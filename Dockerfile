@@ -3,6 +3,7 @@ FROM python:3.9.7
 WORKDIR /usr/src/app
 
 COPY requirements.txt ./
+RUN which lsb_release
 RUN python -m pip list
 RUN python3 -m pip list
 RUN pip install --upgrade pip
