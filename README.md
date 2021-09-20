@@ -1,4 +1,4 @@
-todoist_exporter
+todoist-exporter
 ====
 
 [![ci](https://github.com/legnoh/todoist_exporter/actions/workflows/ci.yml/badge.svg)](https://github.com/legnoh/todoist_exporter/actions/workflows/ci.yml)
