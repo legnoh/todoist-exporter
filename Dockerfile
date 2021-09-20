@@ -1,8 +1,10 @@
-FROM python:3.9.7-slim-buster
+FROM python:3-slim
 
-ENV WORKDIR /app/
-WORKDIR ${WORKDIR}
-COPY . ${WORKDIR}
-RUN pip install pipenv --no-cache-dir && pipenv install
+WORKDIR /usr/src/app
 
-CMD ["python", "main.py"]
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD [ "python", "./main.py" ]
