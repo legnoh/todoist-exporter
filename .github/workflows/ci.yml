@@ -30,6 +30,6 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/todoist-exporter:latest
-          platforms: linux/arm/v8
+          platforms: linux/arm/v7
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
