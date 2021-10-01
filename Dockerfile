@@ -1,11 +1,12 @@
-FROM python:3.9.7-slim-buster
+FROM python:3-slim-buster
 
 WORKDIR /usr/src/app
 
 COPY requirements.txt ./
 RUN python3 -m pip list
 RUN pip3 install --upgrade pip
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install pipenv
+RUN pipenv install
 
 COPY . .
 
