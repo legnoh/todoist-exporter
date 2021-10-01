@@ -1,7 +1,7 @@
 todoist-exporter
 ====
 
-[![ci](https://github.com/legnoh/todoist_exporter/actions/workflows/ci.yml/badge.svg)](https://github.com/legnoh/todoist_exporter/actions/workflows/ci.yml)
+[![ci](https://github.com/legnoh/todoist-exporter/actions/workflows/ci.yml/badge.svg)](https://github.com/legnoh/todoist-exporter/actions/workflows/ci.yml)
 
 simple prometheus exporter for todoist filter result num
 
