@@ -1,5 +1,8 @@
 name: ci
 
+permissions:
+  actions: write
+
 on:
   push:
     branches:
@@ -44,4 +47,4 @@ jobs:
         with:
           repo: legnoh/life-metrics-grafana-deployment
           workflow: Reset docker-compose setting
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PERSONAL_TOKEN }}
