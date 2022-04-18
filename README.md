@@ -1,7 +1,7 @@
 todoist-exporter
 ====
 
-[![Badge](https://img.shields.io/badge/docker-legnoh/smartmeter--exporter-blue?logo=docker&link=https://hub.docker.com/r/legnoh/smartmeter-exporter)](https://hub.docker.com/r/legnoh/smartmeter-exporter) [![ci](https://github.com/legnoh/todoist-exporter/actions/workflows/ci.yml/badge.svg)](https://github.com/legnoh/todoist-exporter/actions/workflows/ci.yml)
+[![Badge](https://img.shields.io/badge/docker-legnoh/todoist--exporter-blue?logo=docker&link=https://hub.docker.com/r/legnoh/todoist-exporter)](https://hub.docker.com/r/legnoh/todoist-exporter) [![ci](https://github.com/legnoh/todoist-exporter/actions/workflows/ci.yml/badge.svg)](https://github.com/legnoh/todoist-exporter/actions/workflows/ci.yml)
 
 simple prometheus exporter for todoist filter result num
 
