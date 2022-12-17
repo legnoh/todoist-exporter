@@ -6,7 +6,7 @@ def search_query_by_filter(api_key, filter):
 
     try:
         response = requests.get(
-            url="https://api.todoist.com/rest/v1/tasks",
+            url="https://api.todoist.com/rest/v2/tasks",
             params={
                 "filter": filter,
             },
