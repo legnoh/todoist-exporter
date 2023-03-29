@@ -11,7 +11,7 @@ def export_filter_nums(filters, api, gauge):
 
 if __name__ == '__main__':
     registry = CollectorRegistry()
-    start_http_server(int(os.environ['PORT']), registry=registry)
+    start_http_server(int(os.environ.get('PORT', 8000)), registry=registry)
 
     g = Gauge('todoist_filter_task_items','todoist item\'s amount by unique filter', ['name', 'filter'], registry=registry)
 
