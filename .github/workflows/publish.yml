@@ -10,6 +10,7 @@ on:
     - '.example.env'
     - 'LICENSE'
     - 'README.md'
+  workflow_dispatch:
 
 jobs:
   docker-build-and-push:
@@ -42,6 +43,6 @@ jobs:
       - name: Restart Docker on RaspberryPi
         uses: benc-uk/workflow-dispatch@v1.2.2
         with:
-          repo: legnoh/life-metrics-grafana-deployment
-          workflow: Reset docker-compose setting
+          repo: legnoh/life-dashboard
+          workflow: Start grafstation
           token: ${{ secrets.PERSONAL_TOKEN }}
