@@ -41,7 +41,7 @@ jobs:
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/todoist-exporter:latest
 
       - name: Restart Docker on RaspberryPi
-        uses: benc-uk/workflow-dispatch@v1.2.3
+        uses: benc-uk/workflow-dispatch@v1.2.4
         with:
           repo: legnoh/life-dashboard
           workflow: Start grafstation
